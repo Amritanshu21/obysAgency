@@ -3,13 +3,23 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-    background-color: #151515;
+    
     font-family: "Plain Light";
 
 }
 html,body{
     height: 100%;
     width: 100%;
+}
+#cursor{
+    height: 2.5vw;
+    width: 2.5vw;
+    border-radius: 50%;
+    border: 1px solid #ffffffbe;
+    position: fixed;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    transform: translate(-50%,-50%);
 }
 #loader{
     position: fixed;
@@ -90,6 +100,7 @@ html,body{
 }
 #main{
     position: relative;
+    background-color: #030303;
     /*hum main div ko height nahi dete  */
 }
 #page1{
@@ -98,3 +109,56 @@ html,body{
     width: 100%;
     background-color: #151515;
 }
+
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.3vw 5.5vw;
+}
+
+#navp2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+
+#navp2 h4{
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+
+.hero{
+    /* background-color: rebeccapurple; */
+    width: 75%;
+    height: fit-content;
+    overflow: hidden;
+    margin-left: 25%;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+}
+.hero:nth-child(2){
+    margin-top: 20vh;
+}
+.hero h1{
+    font-size: 6vw;
+    text-transform: uppercase;
+    line-height: 6.2vw;
+    font-weight: 600;
+}
+.hero h2,.hero h3{
+    font-size: 6vw;
+    text-transform: uppercase;
+    line-height: 6.2vw;
+    font-weight: 600;
+
+}
+.hero h2:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+    font-weight: 500;
+}
+
